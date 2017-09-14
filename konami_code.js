@@ -5,13 +5,13 @@ function init() {
 
   let index = 0;
 
-  document.body.addEventListener('keydown', onKeyDownHandler);  /*{
+  document.body.addEventListener('e', onKeyDownHandler);  /*{
     console.log(e.which)
     onKeyDownHandler(e)
   })*/
 
-  function onKeyDownHandler(keydown) {
-    const key = parseInt(keydown.detail || keydown.which);
+  function onKeyDownHandler(e) {
+    const key = parseInt(e.detail || e.which);
 
     if (key === code[index]) {
       index++;
