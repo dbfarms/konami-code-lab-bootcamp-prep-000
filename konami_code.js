@@ -14,7 +14,7 @@ function init() {
       index++;
       console.log(keydown.which)
       if (index === code.length) {
-          console.log('test hurray')
+          console.log('test')
           alert("Nice!");
           index = 0;
         }
