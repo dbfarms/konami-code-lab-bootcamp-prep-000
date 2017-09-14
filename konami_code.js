@@ -5,7 +5,7 @@ function init() {
 
   let index = 0;
 
-  document.body.addEventListener('keydown', codeAlertTest);  
+  document.body.addEventListener('keydown', codeAlertTest);
 
   function codeAlertTest(keydown) {
     const key = parseInt(keydown.detail || keydown.which);
@@ -15,7 +15,7 @@ function init() {
       console.log(keydown.which)
       if (index === code.length) {
           console.log('test hurray')
-          window.alert("Hurray!");
+          alert("Nice!");
           index = 0;
         }
     } else {
