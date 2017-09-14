@@ -5,10 +5,7 @@ function init() {
 
   let index = 0;
 
-  document.body.addEventListener('keydown', codeAlertTest);  /*{
-    console.log(e.which)
-    onKeyDownHandler(e)
-  })*/
+  document.body.addEventListener('keydown', codeAlertTest);  
 
   function codeAlertTest(keydown) {
     const key = parseInt(keydown.detail || keydown.which);
