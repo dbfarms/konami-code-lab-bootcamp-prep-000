@@ -5,17 +5,17 @@ function init() {
 
   let index = 0;
 
-  document.body.addEventListener('e', onKeyDownHandler);  /*{
+  document.body.addEventListener('keydown', onKeyDownHandler);  /*{
     console.log(e.which)
     onKeyDownHandler(e)
   })*/
 
-  function onKeyDownHandler(e) {
-    const key = parseInt(e.detail || e.which);
-    console.log(e.which)
+  function onKeyDownHandler(keydown) {
+    const key = parseInt(keydown.detail || keydown.which);
+    console.log(keydown.which)
     if (key === code[index]) {
       index++;
-      console.log(e.which)
+      console.log(keydown.which)
       if (index === code.length) {
           console.log('test hurray')
           window.alert("Hurray!");
